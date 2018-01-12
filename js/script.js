@@ -7,6 +7,9 @@ define(function (require) {
 
     let sss = new mail();
 
+
+    let spliter = $('.content-cols');
+    spliter.split({orientation:'vertical', limit:150, position:'300px'});
     // Load library/vendor modules using
     // full IDs, like:
     //var print = require('print');
