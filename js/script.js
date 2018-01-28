@@ -3,6 +3,15 @@ define(function (require) {
     // with a relative require call,
     // like:
     //var mail = require('./mail');
+    var data = { title: 'This Form', name: 'Joey' };
+    var html = MyApp.templates.test(data);
+    // console.log(html);
+
+
+    $('.center-col').html(html);
+
+
+
     var mail = require('Mail');
 
     let sss = new mail();
@@ -13,6 +22,5 @@ define(function (require) {
     // Load library/vendor modules using
     // full IDs, like:
     //var print = require('print');
-    console.log("this is name = ", mail)
     //mail.getName();
 });
